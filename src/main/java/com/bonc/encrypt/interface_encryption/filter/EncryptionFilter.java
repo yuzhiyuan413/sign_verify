@@ -21,7 +21,7 @@ import java.util.*;
 @WebFilter(filterName = "EncryptionFilter", urlPatterns = {"/*"})
 public class EncryptionFilter implements Filter {
     private static final Set<String> ALLOWED_PATHS = Collections.unmodifiableSet(new HashSet<>(
-            Arrays.asList("/pay/notify")));
+            Arrays.asList("/pay/hello")));
     @Override
     public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {
         if(request instanceof HttpServletRequest) {
